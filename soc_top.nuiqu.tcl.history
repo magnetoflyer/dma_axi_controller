@@ -1,0 +1,17 @@
+# TCL commands history
+# Fri May 23 16:08:37 2025
+dni::selection -action set -object {port::soc_top::u_axi_slave|s_axi_bvalid}
+dni::trigger_gui -command gui_command::rtl_analyzer::trace -options {"checkpoint":"user_runs/default_run/elaborated","direction":"fanin","display_new_tab":false,"expand_upto_logic_level_limit":1,"include_hier_ports":false,"source_objects":["port::soc_top::u_axi_slave|s_axi_bvalid"],"stop_at_partition":true,"stop_at_register":true}
+dni::selection -action set -object {port::soc_top::u_axi_slave|s_axi_bvalid}
+dni::selection -action set -object {instance::soc_top::u_axi_slave}
+dni::trigger_gui -command gui_command::rtl_analyzer::fold -options {"checkpoint":"user_runs/default_run/elaborated","object":"button @hier_fold inst u_axi_slave dma_axi_slave {}"}
+dni::selection -action set -object {instance::soc_top::u_axi_slave}
+dni::selection -action set -object {}
+dni::selection -action set -object {}
+dni::selection -action set -object {module::soc_top}
+dni::selection -action set -object {instance::soc_top::u_axi_slave module::soc_top}
+dni::selection -action set -object {}
+dni::selection -action set -object {net_bus::soc_top::n162}
+dni::selection -action set -object {net::soc_top::start_dma}
+dni::selection -action set -object {instance::soc_top::u_dma}
+dni::selection -action set -object {}

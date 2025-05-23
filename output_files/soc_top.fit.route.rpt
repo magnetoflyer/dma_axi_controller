@@ -1,0 +1,487 @@
+Fitter Route Stage Report for soc_top
+Fri May 23 16:12:14 2025
+Quartus Prime Version 25.1.0 Build 129 03/26/2025 SC Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Delay Chain Summary
+  3. Routing Usage Summary
+  4. Route Messages
+  5. Estimated Delay Added for Hold Timing Summary
+  6. Estimated Delay Added for Hold Timing Details
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2025  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Delay Chain Summary                                                                                                                                               ;
++------------------+----------+---------------------+--------------------+----------------+-----------------------------------+-------------------------------------+
+; Name             ; Pin Type ; Input Delay Chain 0 ; Output Delay Chain ; OE Delay Chain ; IO_12_LANE Input Data Delay Chain ; IO_12_LANE Input Strobe Delay Chain ;
++------------------+----------+---------------------+--------------------+----------------+-----------------------------------+-------------------------------------+
+; s_axi_awaddr[0]  ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_awaddr[1]  ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_awaddr[6]  ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_awaddr[7]  ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_awaddr[8]  ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_awaddr[9]  ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_awaddr[10] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_awaddr[11] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_awaddr[12] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_awaddr[13] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_awaddr[14] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_awaddr[15] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_awaddr[16] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_awaddr[17] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_awaddr[18] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_awaddr[19] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_awaddr[20] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_awaddr[21] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_awaddr[22] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_awaddr[23] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_awaddr[24] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_awaddr[25] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_awaddr[26] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_awaddr[27] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_awaddr[28] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_awaddr[29] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_awaddr[30] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_awaddr[31] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_araddr[0]  ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_araddr[1]  ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_araddr[2]  ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_araddr[3]  ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_araddr[4]  ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_araddr[5]  ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_araddr[6]  ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_araddr[7]  ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_araddr[8]  ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_araddr[9]  ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_araddr[10] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_araddr[11] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_araddr[12] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_araddr[13] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_araddr[14] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_araddr[15] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_araddr[16] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_araddr[17] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_araddr[18] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_araddr[19] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_araddr[20] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_araddr[21] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_araddr[22] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_araddr[23] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_araddr[24] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_araddr[25] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_araddr[26] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_araddr[27] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_araddr[28] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_araddr[29] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_araddr[30] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_araddr[31] ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_arvalid    ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_awready    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_wready     ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_bvalid     ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_rdata[0]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_rdata[1]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_rdata[2]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_rdata[3]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_rdata[4]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_rdata[5]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_rdata[6]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_rdata[7]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_rdata[8]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_rdata[9]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_rdata[10]  ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_rdata[11]  ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_rdata[12]  ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_rdata[13]  ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_rdata[14]  ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_rdata[15]  ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_rdata[16]  ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_rdata[17]  ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_rdata[18]  ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_rdata[19]  ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_rdata[20]  ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_rdata[21]  ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_rdata[22]  ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_rdata[23]  ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_rdata[24]  ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_rdata[25]  ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_rdata[26]  ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_rdata[27]  ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_rdata[28]  ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_rdata[29]  ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_rdata[30]  ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_rdata[31]  ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_arready    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; s_axi_rvalid     ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_araddr[0]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_araddr[1]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_araddr[2]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_araddr[3]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_araddr[4]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_araddr[5]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_araddr[6]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_araddr[7]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_araddr[8]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_araddr[9]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_araddr[10]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_araddr[11]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_araddr[12]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_araddr[13]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_araddr[14]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_araddr[15]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_araddr[16]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_araddr[17]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_araddr[18]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_araddr[19]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_araddr[20]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_araddr[21]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_araddr[22]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_araddr[23]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_araddr[24]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_araddr[25]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_araddr[26]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_araddr[27]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_araddr[28]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_araddr[29]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_araddr[30]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_araddr[31]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_arvalid      ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_rready       ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_awaddr[0]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_awaddr[1]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_awaddr[2]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_awaddr[3]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_awaddr[4]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_awaddr[5]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_awaddr[6]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_awaddr[7]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_awaddr[8]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_awaddr[9]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_awaddr[10]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_awaddr[11]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_awaddr[12]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_awaddr[13]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_awaddr[14]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_awaddr[15]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_awaddr[16]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_awaddr[17]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_awaddr[18]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_awaddr[19]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_awaddr[20]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_awaddr[21]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_awaddr[22]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_awaddr[23]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_awaddr[24]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_awaddr[25]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_awaddr[26]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_awaddr[27]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_awaddr[28]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_awaddr[29]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_awaddr[30]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_awaddr[31]   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_awvalid      ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_wdata[0]     ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_wdata[1]     ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_wdata[2]     ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_wdata[3]     ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_wdata[4]     ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_wdata[5]     ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_wdata[6]     ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_wdata[7]     ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_wdata[8]     ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_wdata[9]     ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_wdata[10]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_wdata[11]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_wdata[12]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_wdata[13]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_wdata[14]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_wdata[15]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_wdata[16]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_wdata[17]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_wdata[18]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_wdata[19]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_wdata[20]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_wdata[21]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_wdata[22]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_wdata[23]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_wdata[24]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_wdata[25]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_wdata[26]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_wdata[27]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_wdata[28]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_wdata[29]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_wdata[30]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_wdata[31]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_wvalid       ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; axi_bvalid       ; Input    ; --                  ; --                 ; --             ; --                                ; --                                  ;
+; axi_bready       ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; rst_n            ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_rvalid       ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_awready      ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_wready       ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; clk              ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_arready      ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_rdata[0]     ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_rdata[1]     ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_rdata[2]     ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_rdata[3]     ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_rdata[4]     ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_rdata[5]     ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_rdata[6]     ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_rdata[7]     ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_rdata[8]     ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_rdata[9]     ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_rdata[10]    ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_rdata[11]    ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_rdata[12]    ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_rdata[13]    ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_rdata[14]    ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_rdata[15]    ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_rdata[16]    ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_rdata[17]    ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_rdata[18]    ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_rdata[19]    ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_rdata[20]    ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_rdata[21]    ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_rdata[22]    ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_rdata[23]    ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_rdata[24]    ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_rdata[25]    ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_rdata[26]    ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_rdata[27]    ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_rdata[28]    ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_rdata[29]    ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_rdata[30]    ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; axi_rdata[31]    ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_wdata[0]   ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_awaddr[3]  ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_awaddr[2]  ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_awaddr[4]  ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_awaddr[5]  ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_awvalid    ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_wvalid     ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_wdata[1]   ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_wdata[2]   ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_wdata[3]   ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_wdata[4]   ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_wdata[5]   ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_wdata[6]   ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_wdata[7]   ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_wdata[8]   ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_wdata[9]   ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_wdata[10]  ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_wdata[11]  ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_wdata[12]  ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_wdata[13]  ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_wdata[14]  ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_wdata[15]  ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_wdata[16]  ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_wdata[17]  ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_wdata[18]  ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_wdata[19]  ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_wdata[20]  ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_wdata[21]  ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_wdata[22]  ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_wdata[23]  ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_wdata[24]  ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_wdata[25]  ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_wdata[26]  ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_wdata[27]  ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_wdata[28]  ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_wdata[29]  ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_wdata[30]  ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; s_axi_wdata[31]  ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
++------------------+----------+---------------------+--------------------+----------------+-----------------------------------+-------------------------------------+
+
+
++----------------------------------------------------------+
+; Routing Usage Summary                                    ;
++------------------------------+---------------------------+
+; Routing Resource Type        ; Usage                     ;
++------------------------------+---------------------------+
+; Block interconnects          ; 664 / 664,374 ( < 1 % )   ;
+; C27 interconnects            ; 132 / 12,769 ( 1 % )      ;
+; C4 interconnects             ; 1,762 / 514,392 ( < 1 % ) ;
+; Direct links                 ; 36 / 664,374 ( < 1 % )    ;
+; Global clocks                ; 2 / 32 ( 6 % )            ;
+; Periphery clocks             ; 0 / 410 ( 0 % )           ;
+; R3 interconnects             ; 469 / 246,936 ( < 1 % )   ;
+; R32 interconnects            ; 252 / 28,257 ( < 1 % )    ;
+; R32/C27 interconnect drivers ; 187 / 74,920 ( < 1 % )    ;
+; R6 interconnects             ; 910 / 527,108 ( < 1 % )   ;
+; Regional clock lefts         ; 0 / 8 ( 0 % )             ;
+; Regional clock out bottoms   ; 0 / 8 ( 0 % )             ;
+; Regional clock out tops      ; 0 / 8 ( 0 % )             ;
+; Regional clock rights        ; 0 / 8 ( 0 % )             ;
+; Regional clocks              ; 0 / 8 ( 0 % )             ;
+; Spine buffers                ; 2 / 220 ( < 1 % )         ;
+; Spine clocks                 ; 2 / 330 ( < 1 % )         ;
+; Spine feedthroughs           ; 0 / 224 ( 0 % )           ;
++------------------------------+---------------------------+
+
+
++----------------+
+; Route Messages ;
++----------------+
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info: *******************************************************************
+Info: Running Quartus Prime Fitter
+    Info: Version 25.1.0 Build 129 03/26/2025 SC Pro Edition
+    Info: Processing started: Fri May 23 16:11:15 2025
+    Info: System process ID: 6996
+Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off dma_axi_lp -c soc_top
+Info: qfit2_default_script.tcl version: #1
+Info: Project  = dma_axi_lp
+Info: Revision = soc_top
+Info (22300): Design uses Placement Effort Multiplier = 1.0.
+Info (170193): Fitter routing operations beginning
+Info (170202): The Fitter performed an Auto Fit compilation.  No optimizations were skipped because the design's timing and routability requirements required full optimization.
+Info (25133): Total time spent on timing analysis during Routing is 0.19 seconds.
+Info (16607): Fitter routing operations ending: elapsed time is 00:00:16
+
+
++------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Summary              ;
++-----------------+----------------------+-------------------+
+; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
++-----------------+----------------------+-------------------+
+; clk~derived     ; clk~derived          ; 341.3             ;
++-----------------+----------------------+-------------------+
+Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
+This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
+
+
++-------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                           ;
++------------------------------+----------------------+-------------------+
+; Source Register              ; Destination Register ; Delay Added in ns ;
++------------------------------+----------------------+-------------------+
+; u_axi_slave|dest_addr[1]     ; u_dma|write_ptr[1]   ; 1.818             ;
+; u_axi_slave|transfer_len[7]  ; u_dma|bytes_left[7]  ; 1.816             ;
+; u_axi_slave|transfer_len[14] ; u_dma|bytes_left[14] ; 1.814             ;
+; u_axi_slave|src_addr[5]      ; u_dma|read_ptr[5]    ; 1.810             ;
+; u_axi_slave|src_addr[10]     ; u_dma|read_ptr[10]   ; 1.781             ;
+; u_axi_slave|src_addr[12]     ; u_dma|read_ptr[12]   ; 1.779             ;
+; u_axi_slave|src_addr[14]     ; u_dma|read_ptr[14]   ; 1.776             ;
+; u_axi_slave|src_addr[16]     ; u_dma|read_ptr[16]   ; 1.773             ;
+; u_axi_slave|src_addr[6]      ; u_dma|read_ptr[6]    ; 1.770             ;
+; u_axi_slave|src_addr[8]      ; u_dma|read_ptr[8]    ; 1.768             ;
+; u_axi_slave|src_addr[7]      ; u_dma|read_ptr[7]    ; 1.766             ;
+; u_axi_slave|src_addr[9]      ; u_dma|read_ptr[9]    ; 1.765             ;
+; u_axi_slave|src_addr[13]     ; u_dma|read_ptr[13]   ; 1.763             ;
+; u_axi_slave|src_addr[15]     ; u_dma|read_ptr[15]   ; 1.759             ;
+; u_axi_slave|src_addr[20]     ; u_dma|read_ptr[20]   ; 1.757             ;
+; u_axi_slave|src_addr[3]      ; u_dma|read_ptr[3]    ; 1.755             ;
+; u_axi_slave|src_addr[17]     ; u_dma|read_ptr[17]   ; 1.755             ;
+; u_axi_slave|src_addr[11]     ; u_dma|read_ptr[11]   ; 1.754             ;
+; u_axi_slave|src_addr[18]     ; u_dma|read_ptr[18]   ; 1.751             ;
+; u_axi_slave|transfer_len[0]  ; u_dma|bytes_left[0]  ; 1.748             ;
+; u_axi_slave|src_addr[4]      ; u_dma|read_ptr[4]    ; 1.748             ;
+; u_axi_slave|src_addr[19]     ; u_dma|read_ptr[19]   ; 1.744             ;
+; u_axi_slave|src_addr[2]      ; u_dma|read_ptr[2]    ; 1.739             ;
+; u_axi_slave|dest_addr[21]    ; u_dma|write_ptr[21]  ; 1.738             ;
+; u_axi_slave|src_addr[21]     ; u_dma|read_ptr[21]   ; 1.736             ;
+; u_axi_slave|src_addr[25]     ; u_dma|read_ptr[25]   ; 1.736             ;
+; u_axi_slave|dest_addr[16]    ; u_dma|write_ptr[16]  ; 1.734             ;
+; u_axi_slave|dest_addr[18]    ; u_dma|write_ptr[18]  ; 1.732             ;
+; u_axi_slave|dest_addr[13]    ; u_dma|write_ptr[13]  ; 1.732             ;
+; u_axi_slave|src_addr[29]     ; u_dma|read_ptr[29]   ; 1.731             ;
+; u_axi_slave|src_addr[26]     ; u_dma|read_ptr[26]   ; 1.728             ;
+; u_axi_slave|dest_addr[10]    ; u_dma|write_ptr[10]  ; 1.723             ;
+; u_axi_slave|src_addr[22]     ; u_dma|read_ptr[22]   ; 1.722             ;
+; u_axi_slave|src_addr[28]     ; u_dma|read_ptr[28]   ; 1.721             ;
+; u_axi_slave|src_addr[31]     ; u_dma|read_ptr[31]   ; 1.719             ;
+; u_axi_slave|dest_addr[17]    ; u_dma|write_ptr[17]  ; 1.717             ;
+; u_axi_slave|transfer_len[2]  ; u_dma|bytes_left[2]  ; 1.712             ;
+; u_axi_slave|dest_addr[12]    ; u_dma|write_ptr[12]  ; 1.711             ;
+; u_axi_slave|transfer_len[9]  ; u_dma|bytes_left[9]  ; 1.710             ;
+; u_axi_slave|transfer_len[3]  ; u_dma|bytes_left[3]  ; 1.706             ;
+; u_axi_slave|src_addr[30]     ; u_dma|read_ptr[30]   ; 1.704             ;
+; u_axi_slave|transfer_len[10] ; u_dma|bytes_left[10] ; 1.701             ;
+; u_axi_slave|transfer_len[13] ; u_dma|bytes_left[13] ; 1.700             ;
+; u_axi_slave|transfer_len[20] ; u_dma|bytes_left[20] ; 1.700             ;
+; u_axi_slave|dest_addr[3]     ; u_dma|write_ptr[3]   ; 1.700             ;
+; u_axi_slave|src_addr[23]     ; u_dma|read_ptr[23]   ; 1.697             ;
+; u_axi_slave|transfer_len[4]  ; u_dma|bytes_left[4]  ; 1.696             ;
+; u_axi_slave|transfer_len[17] ; u_dma|bytes_left[17] ; 1.693             ;
+; u_axi_slave|transfer_len[21] ; u_dma|bytes_left[21] ; 1.692             ;
+; u_axi_slave|dest_addr[4]     ; u_dma|write_ptr[4]   ; 1.691             ;
+; u_axi_slave|transfer_len[8]  ; u_dma|bytes_left[8]  ; 1.690             ;
+; u_axi_slave|transfer_len[11] ; u_dma|bytes_left[11] ; 1.689             ;
+; u_axi_slave|transfer_len[19] ; u_dma|bytes_left[19] ; 1.684             ;
+; u_axi_slave|transfer_len[6]  ; u_dma|bytes_left[6]  ; 1.684             ;
+; u_axi_slave|src_addr[24]     ; u_dma|read_ptr[24]   ; 1.683             ;
+; u_axi_slave|transfer_len[15] ; u_dma|bytes_left[15] ; 1.681             ;
+; u_axi_slave|transfer_len[5]  ; u_dma|bytes_left[5]  ; 1.679             ;
+; u_axi_slave|dest_addr[7]     ; u_dma|write_ptr[7]   ; 1.678             ;
+; u_axi_slave|transfer_len[16] ; u_dma|bytes_left[16] ; 1.678             ;
+; u_axi_slave|transfer_len[18] ; u_dma|bytes_left[18] ; 1.675             ;
+; u_axi_slave|dest_addr[5]     ; u_dma|write_ptr[5]   ; 1.674             ;
+; u_axi_slave|dest_addr[8]     ; u_dma|write_ptr[8]   ; 1.670             ;
+; u_axi_slave|transfer_len[12] ; u_dma|bytes_left[12] ; 1.667             ;
+; u_axi_slave|src_addr[27]     ; u_dma|read_ptr[27]   ; 1.666             ;
+; u_axi_slave|dest_addr[11]    ; u_dma|write_ptr[11]  ; 1.664             ;
+; u_axi_slave|transfer_len[1]  ; u_dma|bytes_left[1]  ; 1.664             ;
+; u_axi_slave|dest_addr[14]    ; u_dma|write_ptr[14]  ; 1.663             ;
+; u_axi_slave|dest_addr[2]     ; u_dma|write_ptr[2]   ; 1.657             ;
+; u_axi_slave|dest_addr[9]     ; u_dma|write_ptr[9]   ; 1.656             ;
+; u_axi_slave|dest_addr[15]    ; u_dma|write_ptr[15]  ; 1.656             ;
+; u_axi_slave|dest_addr[20]    ; u_dma|write_ptr[20]  ; 1.654             ;
+; u_axi_slave|dest_addr[6]     ; u_dma|write_ptr[6]   ; 1.650             ;
+; u_axi_slave|dest_addr[19]    ; u_dma|write_ptr[19]  ; 1.644             ;
+; u_axi_slave|src_addr[1]      ; u_dma|read_ptr[1]    ; 1.616             ;
+; u_axi_slave|transfer_len[27] ; u_dma|bytes_left[27] ; 1.613             ;
+; u_axi_slave|src_addr[0]      ; u_dma|read_ptr[0]    ; 1.610             ;
+; u_axi_slave|transfer_len[29] ; u_dma|bytes_left[29] ; 1.584             ;
+; u_axi_slave|dest_addr[0]     ; u_dma|write_ptr[0]   ; 1.580             ;
+; u_axi_slave|transfer_len[22] ; u_dma|bytes_left[22] ; 1.566             ;
+; u_axi_slave|transfer_len[31] ; u_dma|bytes_left[31] ; 1.548             ;
+; u_axi_slave|transfer_len[23] ; u_dma|bytes_left[23] ; 1.548             ;
+; u_axi_slave|transfer_len[26] ; u_dma|bytes_left[26] ; 1.546             ;
+; u_axi_slave|dest_addr[22]    ; u_dma|write_ptr[22]  ; 1.546             ;
+; u_axi_slave|dest_addr[28]    ; u_dma|write_ptr[28]  ; 1.544             ;
+; u_axi_slave|transfer_len[25] ; u_dma|bytes_left[25] ; 1.541             ;
+; u_axi_slave|dest_addr[27]    ; u_dma|write_ptr[27]  ; 1.540             ;
+; u_axi_slave|dest_addr[31]    ; u_dma|write_ptr[31]  ; 1.536             ;
+; u_axi_slave|transfer_len[24] ; u_dma|bytes_left[24] ; 1.534             ;
+; u_axi_slave|dest_addr[24]    ; u_dma|write_ptr[24]  ; 1.532             ;
+; u_axi_slave|transfer_len[28] ; u_dma|bytes_left[28] ; 1.531             ;
+; u_axi_slave|transfer_len[30] ; u_dma|bytes_left[30] ; 1.530             ;
+; u_axi_slave|dest_addr[30]    ; u_dma|write_ptr[30]  ; 1.525             ;
+; u_axi_slave|dest_addr[26]    ; u_dma|write_ptr[26]  ; 1.504             ;
+; u_axi_slave|dest_addr[23]    ; u_dma|write_ptr[23]  ; 1.495             ;
+; u_axi_slave|dest_addr[25]    ; u_dma|write_ptr[25]  ; 1.492             ;
+; u_axi_slave|dest_addr[29]    ; u_dma|write_ptr[29]  ; 1.488             ;
+; u_dma|read_data[24]          ; u_dma|axi_wdata[24]  ; 1.069             ;
+; u_dma|read_data[30]          ; u_dma|axi_wdata[30]  ; 0.987             ;
+; u_dma|read_data[26]          ; u_dma|axi_wdata[26]  ; 0.975             ;
+; u_dma|read_data[6]           ; u_dma|axi_wdata[6]   ; 0.973             ;
++------------------------------+----------------------+-------------------+
+Note: This table only shows the top 100 path(s) that have the largest delay added for hold.
+
+

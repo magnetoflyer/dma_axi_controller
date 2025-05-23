@@ -1,0 +1,43 @@
+Info: Start Simulation process
+Info: RTL Simulation is invoked (generate script)
+Info: Generating simulation script only. Third-party simulator tool is not launched at this moment.
+Info: Simulation previous run directory D:/SOC/simulation/questa/rtlsim backed up into D:/SOC/simulation/questa/rtlsim.bak 
+Info: Simulation run directory D:/SOC/simulation/questa/rtlsim is cleaned up
+Info: Looking for the device name in the project qsf...
+Info: Running ip-make-simscript --output-directory=device_sim_scripts --device-family=cyclone10gx --device=10CX220YF780I5G --spd=sim_dev.spd
+Info: Simulation flow has detected Verilog design. Verilog simulation models will be used
+
+========= EDA Simulation Settings =====================
+
+Sim type              :  RTL
+Sim family            :  cyclone10gx
+Sim mode              :  Generate Script Only
+Sim tool              :  QuestaSim (Verilog)
+Sim language          :  verilog
+Simulator mode        :  GUI
+Quartus root          :  c:/altera_pro/25.1/quartus/bin64/
+Quartus sim root      :  c:/altera_pro/25.1/quartus/eda/sim_lib
+Sim output dir        :  D:/SOC/simulation/questa/rtlsim
+Sim report file       :  D:/SOC/output_files/soc_top_simulation.rpt
+Sim transcript file   :  D:/SOC/simulation/questa/rtlsim/*_transcript.log
+
+=======================================================
+
+Info: Starting simulation with Questasim software
+Sourced simulation flow script c:/altera_pro/25.1/quartus/common/tcl/internal/nativelink/modelsim.tcl
+Info: Generated QuestaSim do file D:/SOC/simulation/questa/rtlsim/soc_top_run_msim_rtl_verilog.do
+Info: To launch the third-party EDA tool and run the generated script, cd into the directory "D:/SOC/simulation/questa/rtlsim", and run the command provided in the "run_sim_command.bat" file.
+Info: Start Simulation process
+Info: RTL Simulation is invoked (run pre-existing script)
+Info: Run simulation script run_sim_command.bat
+Info: Running: run_sim_command.bat  in the directory D:/SOC/simulation/questa/rtlsim
+
+D:\SOC\simulation\questa\rtlsim>echo Simulator transcript file: D:/SOC/simulation/questa/rtlsim/questa_transcript.log 
+Simulator transcript file: D:/SOC/simulation/questa/rtlsim/questa_transcript.log
+
+D:\SOC\simulation\questa\rtlsim>echo Simulation may take a while to finish. User can review the progress of simulation in Simulator transcript file D:/SOC/simulation/questa/rtlsim/questa_transcript.log and Quartus report file D:/SOC/output_files/soc_top_simulation.rpt 
+Simulation may take a while to finish. User can review the progress of simulation in Simulator transcript file D:/SOC/simulation/questa/rtlsim/questa_transcript.log and Quartus report file D:/SOC/output_files/soc_top_simulation.rpt
+
+D:\SOC\simulation\questa\rtlsim>C:/altera_pro/25.1/questa_fse/win64/vsim.exe -gui -l questa_transcript.log -do "soc_top_run_msim_rtl_verilog.do" 
+
+Info: See the messages on the console, D:/SOC/output_files/soc_top_simulation.rpt and simulator transcript file(s).

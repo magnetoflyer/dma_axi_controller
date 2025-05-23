@@ -1,0 +1,157 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2024.3 2024.09, Sep 10 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/SOC/simulation/questa/rtlsim
+T_opt
+!s110 1747998564
+V7S6MWg`z^mCdEBL_zi@3k0
+04 6 4 work soc_tb fast 0
+=1-b44506a852e2-68305763-23b-2658
+R0
+!s12f OEM100
+!s12b OEM100
+!s124 OEM10U5 
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L work_lib -L lpm_ver -L sgate_ver -L altera_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclone10gx_ver -L cyclone10gx_hip_ver -L cyclone10gx_hssi_ver -L pdipss_work -L work -L rtl_work +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2024.3;79
+vclock_gate
+2D:/SOC/clk_gate.sv
+Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z4 !s110 1747998494
+!i10b 1
+!s100 Ph=S]Xb^;gVb;gM0Yn5XU0
+IDHO1A`Sh4XzB;:h5LUOnS1
+S1
+R1
+w1747995868
+8D:/SOC/clk_gate.sv
+FD:/SOC/clk_gate.sv
+!i122 2
+L0 1 9
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2024.3;79
+r1
+!s85 0
+31
+Z7 !s108 1747998494.000000
+!s107 D:/SOC/clk_gate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/SOC+D:/SOC/|D:/SOC/clk_gate.sv|
+!i113 0
+Z8 o-sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z9 !s92 -sv -work work +incdir+D:/SOC+D:/SOC/ -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vdma_axi_slave
+2D:/SOC/dma_axI_slave.sv
+R3
+Z10 !s110 1747998495
+!i10b 1
+!s100 mKmm_6FRWK>nFLKM7k9DK0
+In@OXSlFfe_mIE9CijJES]0
+S1
+R1
+w1747996069
+8D:/SOC/dma_axI_slave.sv
+FD:/SOC/dma_axI_slave.sv
+!i122 3
+L0 1 59
+R5
+R6
+r1
+!s85 0
+31
+Z11 !s108 1747998495.000000
+!s107 D:/SOC/dma_axI_slave.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/SOC+D:/SOC/|D:/SOC/dma_axI_slave.sv|
+!i113 0
+R8
+R9
+R2
+vdma_core
+2D:/SOC/dma_core.sv
+R3
+R10
+!i10b 1
+!s100 H8`j<iZQoNfPW?LV@VGZO1
+I1@^AUboSO:781D^NYh::X2
+S1
+R1
+w1747996093
+8D:/SOC/dma_core.sv
+FD:/SOC/dma_core.sv
+!i122 4
+L0 1 147
+R5
+R6
+r1
+!s85 0
+31
+R11
+!s107 D:/SOC/dma_core.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/SOC+D:/SOC/|D:/SOC/dma_core.sv|
+!i113 0
+R8
+R9
+R2
+vsoc_tb
+2D:/SOC/soc_tb.sv
+R3
+!s110 1747998496
+!i10b 1
+!s100 h>j=V=0l5C9MV7aSGb<Y^0
+IbomF?E`2FMQPYIEDIX6N`3
+S1
+R1
+w1747996765
+8D:/SOC/soc_tb.sv
+FD:/SOC/soc_tb.sv
+!i122 6
+L0 1 85
+R5
+R6
+r1
+!s85 0
+31
+R11
+!s107 D:/SOC/soc_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/SOC+D:/SOC/|D:/SOC/soc_tb.sv|
+!i113 0
+R8
+R9
+R2
+vsoc_top
+2D:/SOC/soc_top.sv
+R3
+R4
+!i10b 1
+!s100 f`1EdbcHT;Y;[:j^Y1XJZ2
+INKAX8f@Sl=4N2OkjiHZZ73
+S1
+R1
+w1747995705
+8D:/SOC/soc_top.sv
+FD:/SOC/soc_top.sv
+!i122 0
+L0 1 115
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/SOC/soc_top.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/SOC+D:/SOC/|D:/SOC/soc_top.sv|
+!i113 0
+R8
+R9
+R2

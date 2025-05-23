@@ -1,0 +1,179 @@
+Design Assistant report for soc_top
+Fri May 23 16:11:07 2025
+Quartus Prime Version 25.1.0 Build 129 03/26/2025 SC Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Design Assistant (Elaborated) Results - 1 of 3 Rules Failed
+  3. LNT-30022 - Same Signal Source Drives Clock Port and Another Port of a Register
+  4. LNT-30020 - Same Signal Source Drives Synchronous and Asynchronous Ports of the Same Register
+  5. LNT-30021 - Same Signal Source Drives More Than One Asynchronous Port of a Register
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2025  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Design Assistant (Elaborated) Results - 1 of 3 Rules Failed                                                                                         ;
++-----------------------------------------------------------------------------------------------+----------+------------+--------+--------------------+
+; Rule                                                                                          ; Severity ; Violations ; Waived ; Tags               ;
++-----------------------------------------------------------------------------------------------+----------+------------+--------+--------------------+
+; LNT-30022 - Same Signal Source Drives Clock Port and Another Port of a Register               ; Low      ; 102        ; 0      ; nonstandard-timing ;
+; LNT-30020 - Same Signal Source Drives Synchronous and Asynchronous Ports of the Same Register ; Low      ; 0          ; 0      ; nonstandard-timing ;
+; LNT-30021 - Same Signal Source Drives More Than One Asynchronous Port of a Register           ; Low      ; 0          ; 0      ; nonstandard-timing ;
++-----------------------------------------------------------------------------------------------+----------+------------+--------+--------------------+
+
+
+Status:		FAIL
+Severity:		Low
+Number of violations: 	102
+Rule Parameters:      	max_violations = 5000
++---------------------------------------------------------------------------------+
+; LNT-30022 - Same Signal Source Drives Clock Port and Another Port of a Register ;
++----------------------+------------+---------------------------------------------+
+; Register             ; Signal     ; Waived                                      ;
++----------------------+------------+---------------------------------------------+
+; u_dma|dma_done       ; LessThan_0 ;                                             ;
+; u_dma|bytes_left[23] ; LessThan_0 ;                                             ;
+; u_dma|axi_awvalid    ; LessThan_0 ;                                             ;
+; u_dma|axi_wvalid     ; LessThan_0 ;                                             ;
+; u_dma|axi_bready     ; LessThan_0 ;                                             ;
+; u_dma|bytes_left[22] ; LessThan_0 ;                                             ;
+; u_dma|bytes_left[21] ; LessThan_0 ;                                             ;
+; u_dma|bytes_left[20] ; LessThan_0 ;                                             ;
+; u_dma|bytes_left[19] ; LessThan_0 ;                                             ;
+; u_dma|bytes_left[18] ; LessThan_0 ;                                             ;
+; u_dma|bytes_left[17] ; LessThan_0 ;                                             ;
+; u_dma|bytes_left[16] ; LessThan_0 ;                                             ;
+; u_dma|bytes_left[15] ; LessThan_0 ;                                             ;
+; u_dma|bytes_left[14] ; LessThan_0 ;                                             ;
+; u_dma|bytes_left[31] ; LessThan_0 ;                                             ;
+; u_dma|bytes_left[13] ; LessThan_0 ;                                             ;
+; u_dma|bytes_left[12] ; LessThan_0 ;                                             ;
+; u_dma|bytes_left[11] ; LessThan_0 ;                                             ;
+; u_dma|bytes_left[10] ; LessThan_0 ;                                             ;
+; u_dma|bytes_left[9]  ; LessThan_0 ;                                             ;
+; u_dma|bytes_left[8]  ; LessThan_0 ;                                             ;
+; u_dma|bytes_left[7]  ; LessThan_0 ;                                             ;
+; u_dma|bytes_left[6]  ; LessThan_0 ;                                             ;
+; u_dma|bytes_left[5]  ; LessThan_0 ;                                             ;
+; u_dma|bytes_left[4]  ; LessThan_0 ;                                             ;
+; u_dma|bytes_left[30] ; LessThan_0 ;                                             ;
+; u_dma|bytes_left[3]  ; LessThan_0 ;                                             ;
+; u_dma|bytes_left[2]  ; LessThan_0 ;                                             ;
+; u_dma|bytes_left[1]  ; LessThan_0 ;                                             ;
+; u_dma|bytes_left[0]  ; LessThan_0 ;                                             ;
+; u_dma|read_ptr[31]   ; LessThan_0 ;                                             ;
+; u_dma|read_ptr[30]   ; LessThan_0 ;                                             ;
+; u_dma|read_ptr[29]   ; LessThan_0 ;                                             ;
+; u_dma|read_ptr[28]   ; LessThan_0 ;                                             ;
+; u_dma|read_ptr[27]   ; LessThan_0 ;                                             ;
+; u_dma|read_ptr[26]   ; LessThan_0 ;                                             ;
+; u_dma|bytes_left[29] ; LessThan_0 ;                                             ;
+; u_dma|read_ptr[25]   ; LessThan_0 ;                                             ;
+; u_dma|read_ptr[24]   ; LessThan_0 ;                                             ;
+; u_dma|read_ptr[23]   ; LessThan_0 ;                                             ;
+; u_dma|read_ptr[22]   ; LessThan_0 ;                                             ;
+; u_dma|read_ptr[21]   ; LessThan_0 ;                                             ;
+; u_dma|read_ptr[20]   ; LessThan_0 ;                                             ;
+; u_dma|read_ptr[19]   ; LessThan_0 ;                                             ;
+; u_dma|read_ptr[18]   ; LessThan_0 ;                                             ;
+; u_dma|read_ptr[17]   ; LessThan_0 ;                                             ;
+; u_dma|read_ptr[16]   ; LessThan_0 ;                                             ;
+; u_dma|bytes_left[28] ; LessThan_0 ;                                             ;
+; u_dma|read_ptr[15]   ; LessThan_0 ;                                             ;
+; u_dma|read_ptr[14]   ; LessThan_0 ;                                             ;
+; u_dma|read_ptr[13]   ; LessThan_0 ;                                             ;
+; u_dma|read_ptr[12]   ; LessThan_0 ;                                             ;
+; u_dma|read_ptr[11]   ; LessThan_0 ;                                             ;
+; u_dma|read_ptr[10]   ; LessThan_0 ;                                             ;
+; u_dma|read_ptr[9]    ; LessThan_0 ;                                             ;
+; u_dma|read_ptr[8]    ; LessThan_0 ;                                             ;
+; u_dma|read_ptr[7]    ; LessThan_0 ;                                             ;
+; u_dma|read_ptr[6]    ; LessThan_0 ;                                             ;
+; u_dma|bytes_left[27] ; LessThan_0 ;                                             ;
+; u_dma|read_ptr[5]    ; LessThan_0 ;                                             ;
+; u_dma|read_ptr[4]    ; LessThan_0 ;                                             ;
+; u_dma|read_ptr[3]    ; LessThan_0 ;                                             ;
+; u_dma|read_ptr[2]    ; LessThan_0 ;                                             ;
+; u_dma|read_ptr[1]    ; LessThan_0 ;                                             ;
+; u_dma|read_ptr[0]    ; LessThan_0 ;                                             ;
+; u_dma|write_ptr[31]  ; LessThan_0 ;                                             ;
+; u_dma|write_ptr[30]  ; LessThan_0 ;                                             ;
+; u_dma|write_ptr[29]  ; LessThan_0 ;                                             ;
+; u_dma|write_ptr[28]  ; LessThan_0 ;                                             ;
+; u_dma|bytes_left[26] ; LessThan_0 ;                                             ;
+; u_dma|write_ptr[27]  ; LessThan_0 ;                                             ;
+; u_dma|write_ptr[26]  ; LessThan_0 ;                                             ;
+; u_dma|write_ptr[25]  ; LessThan_0 ;                                             ;
+; u_dma|write_ptr[24]  ; LessThan_0 ;                                             ;
+; u_dma|write_ptr[23]  ; LessThan_0 ;                                             ;
+; u_dma|write_ptr[22]  ; LessThan_0 ;                                             ;
+; u_dma|write_ptr[21]  ; LessThan_0 ;                                             ;
+; u_dma|write_ptr[20]  ; LessThan_0 ;                                             ;
+; u_dma|write_ptr[19]  ; LessThan_0 ;                                             ;
+; u_dma|write_ptr[18]  ; LessThan_0 ;                                             ;
+; u_dma|bytes_left[25] ; LessThan_0 ;                                             ;
+; u_dma|write_ptr[17]  ; LessThan_0 ;                                             ;
+; u_dma|write_ptr[16]  ; LessThan_0 ;                                             ;
+; u_dma|write_ptr[15]  ; LessThan_0 ;                                             ;
+; u_dma|write_ptr[14]  ; LessThan_0 ;                                             ;
+; u_dma|write_ptr[13]  ; LessThan_0 ;                                             ;
+; u_dma|write_ptr[12]  ; LessThan_0 ;                                             ;
+; u_dma|write_ptr[11]  ; LessThan_0 ;                                             ;
+; u_dma|write_ptr[10]  ; LessThan_0 ;                                             ;
+; u_dma|write_ptr[9]   ; LessThan_0 ;                                             ;
+; u_dma|write_ptr[8]   ; LessThan_0 ;                                             ;
+; u_dma|bytes_left[24] ; LessThan_0 ;                                             ;
+; u_dma|write_ptr[7]   ; LessThan_0 ;                                             ;
+; u_dma|write_ptr[6]   ; LessThan_0 ;                                             ;
+; u_dma|write_ptr[5]   ; LessThan_0 ;                                             ;
+; u_dma|write_ptr[4]   ; LessThan_0 ;                                             ;
+; u_dma|write_ptr[3]   ; LessThan_0 ;                                             ;
+; u_dma|write_ptr[2]   ; LessThan_0 ;                                             ;
+; u_dma|write_ptr[1]   ; LessThan_0 ;                                             ;
+; u_dma|write_ptr[0]   ; LessThan_0 ;                                             ;
+; u_dma|axi_arvalid    ; LessThan_0 ;                                             ;
+; u_dma|axi_rready     ; LessThan_0 ;                                             ;
++----------------------+------------+---------------------------------------------+
+
+
+Status:		PASS
+Severity:		Low
+Number of violations: 	0
+Rule Parameters:      	max_violations = 5000
++-----------------------------------------------------------------------------------------------+
+; LNT-30020 - Same Signal Source Drives Synchronous and Asynchronous Ports of the Same Register ;
++-----------------------------------------------------------------------------------------------+
+
+
+Status:		PASS
+Severity:		Low
+Number of violations: 	0
+Rule Parameters:      	max_violations = 5000
++-------------------------------------------------------------------------------------+
+; LNT-30021 - Same Signal Source Drives More Than One Asynchronous Port of a Register ;
++-------------------------------------------------------------------------------------+
+
+

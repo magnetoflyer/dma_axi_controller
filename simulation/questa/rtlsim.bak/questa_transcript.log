@@ -1,0 +1,230 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 win64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do soc_top_run_msim_rtl_verilog.do
+# onerror {resume}
+# 
+# if {![info exists DPI_LIBRARY_ELAB]} { set DPI_LIBRARY_ELAB ""} 
+# 
+# if ![file isdirectory verilog_libs] {
+# 	file mkdir verilog_libs
+# }
+# 
+###### Libraries for device simulation 
+# 
+# set QSYS_SIMDIR device_sim_scripts
+# device_sim_scripts
+# set PRECOMP_DEVICE_LIB_FILE ""
+# source $QSYS_SIMDIR/mentor/msim_setup.tcl
+# [exec] file_copy
+# List Of Command Line Aliases
+# 
+# file_copy                                         -- Copy ROM/RAM files to simulation directory
+# 
+# dev_com                                           -- Compile device library files
+# 
+# com                                               -- Compile the design files in correct order
+# 
+# elab                                              -- Elaborate top level design
+# 
+# elab_debug                                        -- Elaborate the top level design with -voptargs=+acc option
+# 
+# ld                                                -- Compile all the design files and elaborate the top level design
+# 
+# ld_debug                                          -- Compile all the design files and elaborate the top level design with  -voptargs=+acc
+# 
+# 
+# 
+# List Of Variables
+# 
+# TOP_LEVEL_NAME                                    -- Top level module name.
+#                                                      For most designs, this should be overridden
+#                                                      to enable the elab/elab_debug aliases.
+# 
+# SYSTEM_INSTANCE_NAME                              -- Instantiated system module name inside top level module.
+# 
+# QSYS_SIMDIR                                       -- Qsys base simulation directory.
+# 
+# QUARTUS_INSTALL_DIR                               -- Quartus installation directory.
+# 
+# USER_DEFINED_COMPILE_OPTIONS                      -- User-defined compile options, added to com/dev_com aliases.
+# 
+# USER_DEFINED_VHDL_COMPILE_OPTIONS                 -- User-defined vhdl compile options, added to com/dev_com aliases.
+# 
+# USER_DEFINED_VERILOG_COMPILE_OPTIONS              -- User-defined verilog compile options, added to com/dev_com aliases.
+# 
+# USER_DEFINED_ELAB_OPTIONS                         -- User-defined elaboration options, added to elab/elab_debug aliases.
+# 
+# SILENCE                                           -- Set to true to suppress all informational and/or warning messages in the generated simulation script. 
+# 
+# PRECOMP_DEVICE_LIB_FILE                           -- Precompiled device library file.
+#                                                     Use this variable to provide modelsim.ini or tcl containing device library mapping and dev_com will be skipped
+#                                                     If value is empty, device libraries will be compiled local
+# 
+# FORCE_MODELSIM_AE_SELECTION                       -- Set to true to force to select Modelsim AE always.
+# dev_com
+# [exec] dev_com
+# 
+###### End Libraries for device simulation 
+# 
+# vmap pdipss_work ./libraries/work/
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap pdipss_work ./libraries/work/ 
+# Modifying modelsim.ini
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work    +incdir+D:/SOC+D:/SOC/ {D:/SOC/soc_top.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 16:17:56 on May 23,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/SOC+D:/SOC/" D:/SOC/soc_top.sv 
+# -- Compiling module soc_top
+# 
+# Top level modules:
+# 	soc_top
+# End time: 16:17:56 on May 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work    +incdir+D:/SOC+D:/SOC/ {D:/SOC/dma_axi_slave.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 16:17:57 on May 23,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/SOC+D:/SOC/" D:/SOC/dma_axi_slave.sv 
+# -- Compiling module dma_axi_slave
+# 
+# Top level modules:
+# 	dma_axi_slave
+# End time: 16:17:57 on May 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work    +incdir+D:/SOC+D:/SOC/ {D:/SOC/clk_gate.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 16:17:57 on May 23,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/SOC+D:/SOC/" D:/SOC/clk_gate.sv 
+# -- Compiling module clock_gate
+# 
+# Top level modules:
+# 	clock_gate
+# End time: 16:17:57 on May 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work    +incdir+D:/SOC+D:/SOC/ {D:/SOC/dma_axI_slave.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 16:17:57 on May 23,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/SOC+D:/SOC/" D:/SOC/dma_axI_slave.sv 
+# -- Compiling module dma_axi_slave
+# 
+# Top level modules:
+# 	dma_axi_slave
+# End time: 16:17:57 on May 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work    +incdir+D:/SOC+D:/SOC/ {D:/SOC/dma_core.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 16:17:57 on May 23,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/SOC+D:/SOC/" D:/SOC/dma_core.sv 
+# -- Compiling module dma_core
+# 
+# Top level modules:
+# 	dma_core
+# End time: 16:17:57 on May 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work    +incdir+D:/SOC+D:/SOC/ {D:/SOC/soc_tb.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 16:17:58 on May 23,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/SOC+D:/SOC/" D:/SOC/soc_tb.sv 
+# -- Compiling module soc_tb
+# 
+# Top level modules:
+# 	soc_tb
+# End time: 16:17:58 on May 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work    +incdir+D:/SOC+D:/SOC/ {D:/SOC/soc_tb.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# Start time: 16:17:58 on May 23,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/SOC+D:/SOC/" D:/SOC/soc_tb.sv 
+# -- Compiling module soc_tb
+# 
+# Top level modules:
+# 	soc_tb
+# End time: 16:17:58 on May 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# if {![info exists ELAB_OPTIONS]} { set ELAB_OPTIONS ""} 
+# if {![info exists DPI_LIBRARIES_ELAB]} { set DPI_LIBRARIES_ELAB ""} 
+# 
+# if {![info exists logical_libraries]} { set logical_libraries ""} 
+# set pd_libs ""
+# foreach library $logical_libraries { append pd_libs " -L $library" }
+# if {$pd_libs != "" } {
+#     append pd_libs " -L pdipss_work"
+# }
+#  -L work -L work_lib -L lpm_ver -L sgate_ver -L altera_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclone10gx_ver -L cyclone10gx_hip_ver -L cyclone10gx_hssi_ver -L pdipss_work
+# 
+# eval "vsim -t 1ps $pd_libs -L work -L rtl_work -voptargs=\"+acc\"   $ELAB_OPTIONS $DPI_LIBRARIES_ELAB soc_tb"
+# vsim -t 1ps -L work -L work_lib -L lpm_ver -L sgate_ver -L altera_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclone10gx_ver -L cyclone10gx_hip_ver -L cyclone10gx_hssi_ver -L pdipss_work -L work -L rtl_work -voptargs=""+acc"" soc_tb 
+# Start time: 16:17:58 on May 23,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-143) Recognized 1 FSM in module "dma_core(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.soc_tb(fast)
+# Loading work.soc_top(fast)
+# Loading work.clock_gate(fast)
+# Loading work.dma_axi_slave(fast)
+# Loading work.dma_core(fast)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# echo Press Enter key to get the command prompt...
+# Press Enter key to get the command prompt...
+# run -all
+# ** Note: $finish    : D:/SOC/soc_tb.sv(82)
+#    Time: 300 ps  Iteration: 0  Instance: /soc_tb
+# 1
+# Break in Module soc_tb at D:/SOC/soc_tb.sv line 82
+add wave -position insertpoint  \
+sim:/soc_tb/dut/u_clk_gate/clk \
+sim:/soc_tb/dut/u_clk_gate/clk_en \
+sim:/soc_tb/dut/u_clk_gate/gated_clk
+vsim -t 1ps -L work -L work_lib -L lpm_ver -L sgate_ver -L altera_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclone10gx_ver -L cyclone10gx_hip_ver -L cyclone10gx_hssi_ver -L pdipss_work -L work -L rtl_work -voptargs=\"+acc\" work.soc_top
+# End time: 16:35:07 on May 23,2025, Elapsed time: 0:17:09
+# Errors: 0, Warnings: 1
+# vsim -t 1ps -L work -L work_lib -L lpm_ver -L sgate_ver -L altera_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclone10gx_ver -L cyclone10gx_hip_ver -L cyclone10gx_hssi_ver -L pdipss_work -L work -L rtl_work -voptargs=""+acc"" work.soc_top 
+# Start time: 16:35:07 on May 23,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-143) Recognized 1 FSM in module "dma_core(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.soc_top(fast)
+# Loading work.clock_gate(fast)
+# Loading work.dma_axi_slave(fast)
+# Loading work.dma_core(fast)
+add wave -position insertpoint  \
+sim:/soc_top/u_clk_gate/clk \
+sim:/soc_top/u_clk_gate/clk_en \
+sim:/soc_top/u_clk_gate/gated_clk
+# Causality operation skipped due to absence of debug database file
+run -all
+# End time: 16:36:27 on May 23,2025, Elapsed time: 0:01:20
+# Errors: 0, Warnings: 1

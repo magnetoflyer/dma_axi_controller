@@ -1,0 +1,95 @@
+Synthesis report
+Fri May 23 16:16:25 2025
+Quartus Prime Version 25.1.0 Build 129 03/26/2025 SC Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Design Analysis Summary
+  3. Design Analysis Source Files Read
+  4. Warnings for soc_top.sv
+  5. Design Analysis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2025  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
++----------------------------------------------------------------+
+; Design Analysis Summary                                        ;
++------------------------+---------------------------------------+
+; Design Analysis Status ; Successful - Fri May 23 16:16:20 2025 ;
+; Revision Name          ; soc_top                               ;
+; Top-level Entity Name  ; soc_top                               ;
+; Family                 ; Cyclone 10 GX                         ;
++------------------------+---------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Design Analysis Source Files Read                                                                                                                                                 ;
++----------------------------------+----------------------------------------+------------------------------+---------+-----------+---------------+----------------------------------+
+; File Name with User-Entered Path ; File Type                              ; File Name with Absolute Path ; Library ; IP Source ; Include Files ; MD5                              ;
++----------------------------------+----------------------------------------+------------------------------+---------+-----------+---------------+----------------------------------+
+; soc_top.sv                       ; User-Specified SystemVerilog HDL File  ; D:/SOC/soc_top.sv            ;         ;           ;               ; 913a6bba7dab71d266de6c66a463c48f ;
+; dma_axi_slave.sv                 ; User-Specified SystemVerilog HDL File  ; D:/SOC/dma_axi_slave.sv      ;         ;           ;               ; e8f708709d0b911e6c85c6db33552bad ;
+; clk_gate.sv                      ; User-Specified SystemVerilog HDL File  ; D:/SOC/clk_gate.sv           ;         ;           ;               ; 65beaa18c17bc68f56df25fc337bba90 ;
+; dma_axI_slave.sv                 ; User-Specified SystemVerilog HDL File  ; D:/SOC/dma_axI_slave.sv      ;         ;           ;               ; e8f708709d0b911e6c85c6db33552bad ;
+; dma_core.sv                      ; User-Specified SystemVerilog HDL File  ; D:/SOC/dma_core.sv           ;         ;           ;               ; d611b4375c7b02ea450d79cf04a159ba ;
+; soc_tb.sv                        ; User-Specified SystemVerilog HDL File  ; D:/SOC/soc_tb.sv             ;         ;           ;               ; a01205b68a7e5ef3cac3593a2ba0cf5a ;
++----------------------------------+----------------------------------------+------------------------------+---------+-----------+---------------+----------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Warnings for soc_top.sv                                                                                                                     ;
++------------+----------+-------+-------------------------------------------------------------------------------------------------------------+
+; Message ID ; Severity ; Count ; Sample Warning                                                                                              ;
++------------+----------+-------+-------------------------------------------------------------------------------------------------------------+
+; 13469      ; Warning  ; 1     ; Verilog HDL assignment warning at soc_top.sv(85): truncated value with size 17 to match size of target (16) ;
++------------+----------+-------+-------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------+
+; Design Analysis Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Synthesis
+    Info: Version 25.1.0 Build 129 03/26/2025 SC Pro Edition
+    Info: Processing started: Fri May 23 16:16:18 2025
+    Info: System process ID: 10692
+Info: Command: quartus_syn --read_settings_files=on --write_settings_files=off dma_axi_lp -c soc_top --design_analysis
+Info: qis_default_flow_script.tcl version: #1
+Info: Initializing Synthesis...
+Info: Project = "dma_axi_lp"
+Info: Revision = "soc_top"
+Info: Running Design Analysis
+Info: Analyzing source files for Design Analysis mode
+Info (21958): Initialized Quartus Message Database
+Info (18237): File "D:/SOC/dma_axI_slave.sv" is a duplicate of already analyzed file "D:/SOC/dma_axi_slave.sv" (same filename, same library name and same md5 digest). Skipping analysis of this file.
+Info (22567): Verilog HDL info at dma_axi_slave.sv(26): extracting RAM for identifier 'regfile' File: D:/SOC/dma_axi_slave.sv Line: 26
+Warning (13469): Verilog HDL assignment warning at soc_top.sv(85): truncated value with size 17 to match size of target (16) File: D:/SOC/soc_top.sv Line: 85
+Info: Quartus Prime Synthesis was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 592 megabytes
+    Info: Processing ended: Fri May 23 16:16:25 2025
+    Info: Elapsed time: 00:00:07
+    Info: System process ID: 10692
+
+
